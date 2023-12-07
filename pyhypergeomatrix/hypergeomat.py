@@ -52,7 +52,7 @@ def _T(alpha, a, b, kappa):
     prod3 = np.prod((g - alpha) * e / (g * (e + alpha)))
     prod4 = np.prod((l - f) / (l + h))
     out = prod1 / prod2 * prod3 * prod4
-    return 0 if isinf(out) or np.isnan(out) else out
+    return 0 if isinf(out.real) or isinf(out.imag) or np.isnan(out) else out
 
 
 def __dualPartition(kappa):
