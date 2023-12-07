@@ -122,8 +122,8 @@ def hypergeomPQ(m, a, b, x, alpha=2):
 
     Returns
     -------
-    TYPE
-        DESCRIPTION.
+    real or complex number
+        The value of the truncated hypergeometric function.
 
     """
     if a is None or len(a) == 0:
